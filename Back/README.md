@@ -22,8 +22,8 @@ L'application permet de gérer une bibliothèque en ligne et couvre les fonction
 ### 1. Cloner le projet dans un dossier
 
 ```bash
-git clone https://github.com/TeamZJava/BookHub-back.git
-cd bookhub-back
+git clone https://github.com/JnniferV/BookHub.git
+cd back
 ```
 
 ---

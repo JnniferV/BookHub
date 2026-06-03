@@ -1,0 +1,30 @@
+<nav class="navbar">
+  <div class="navbar-left">
+    <span class="logo" routerLink="/catalogue">BookHub</span>
+    @if (isLoggedIn()) {
+      <span class="notification-dot" [class.late]="isLate"></span>
+    }
+  </div>
+  @if (isLoggedIn()) {
+    <div class="navbar-links">
+      <a routerLink="/catalogue" routerLinkActive="active">Catalogue</a>
+      <a routerLink="/favoris" routerLinkActive="active">Favoris</a>
+       @if (authService.hasRole('ADMIN')) {
+        <a routerLink="/dashboard-admin" routerLinkActive="active">Dashboard</a>
+      } @else if (authService.hasRole('LIBRARIAN')) {
+        <a routerLink="/dashboard-librarian" routerLinkActive="active">Dashboard</a>
+      } @else {
+        <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      }
+      <a routerLink="/profil" routerLinkActive="active">Profil</a>
+    </div>
+  }
+  <div class="navbar-right">
+    <button class="btn-theme" (click)="toggleTheme()" [title]="isDark ? 'Passer en mode clair' : 'Passer en mode sombre'">
+      {{ isDark ? '☀️' : '🌙' }}
+    </button>
+    @if (isLoggedIn()) {
+      <button class="btn-logout" (click)="logout()">Déconnexion</button>
+    }
+  </div>
+</nav>

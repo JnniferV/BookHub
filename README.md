@@ -1,3 +1,2 @@
 # BookHub
-
-Projet associatif de gestion pour une librairie sol
+Un projet associatif de librairie solidaire en Java

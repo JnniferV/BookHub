@@ -4,7 +4,7 @@
 
 Application réalisée dans le cadre d'un projet de groupe au sein de l'école ENI.
 
-Elle doit être couplée avec l'API REST [BookHub-back](https://github.com/TeamZJava/BookHub-back).
+Elle doit être couplée avec l'API REST [BookHub-back](https:[//github.com/JnniferV/BookHub/tree/main/Back]).
 
 Interface web développée avec Angular, permettant de gérer une bibliothèque en ligne :
 
@@ -21,8 +21,8 @@ Interface web développée avec Angular, permettant de gérer une bibliothèque 
 ### 1. Cloner le projet
 
 ```bash
-git clone https://github.com/TeamZJava/BookHub-front.git
-cd BookHub-front
+git clone https://github.com/JnniferV/BookHub/tree/main.git
+cd Front
 ```
 
 ### 2. Installer les dépendances
@@ -39,7 +39,7 @@ ng serve
 
 L'application démarre sur `http://localhost:4200`.
 
-> Le back-end doit tourner sur `http://localhost:8080` avant de lancer le front. Voir le README de [BookHub-back](https://github.com/TeamZJava/BookHub-back).
+> Le back-end doit tourner sur `http://localhost:8080` avant de lancer le front. Voir le README de [BookHub-back](https:[//github.com/JnniferV/BookHub/tree/main/Back]).
 
 ---
 
